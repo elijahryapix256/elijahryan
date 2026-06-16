@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoFresh Organics | Fresh Fruits & Organic Produce</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background:#2E7D32;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FF9800;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:5px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#2E7D32;
+    font-size:36px;
+}
+
+.about{
+    text-align:center;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f8f8f8;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#2E7D32;
+    margin-bottom:10px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.contact{
+    background:#f4f4f4;
+}
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    background:#2E7D32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#2E7D32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">EcoFresh Organics</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Fresh Fruits & Organic Produce</h1>
+        <p>Quality fruits delivered fresh from farm to your doorstep.</p>
+
+        <a href="#products" class="btn">Our Products</a>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
+        <p>
+            EcoFresh Organics is a trusted supplier of fresh fruits and organic produce.
+            We provide healthy, high-quality products to homes, hotels, restaurants,
+            supermarkets, schools, and businesses.
+        </p>
+    </div>
+</section>
+
+<section id="products">
+    <h2 class="section-title">Our Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <h3>Fresh Fruits</h3>
+            <p>Mangoes, Pineapples, Bananas, Oranges, Avocados, Watermelons and more.</p>
+        </div>
+
+        <div class="card">
+            <h3>Organic Vegetables</h3>
+            <p>Fresh organic vegetables sourced from trusted farmers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Natural Honey</h3>
+            <p>Pure organic honey packed with natural goodness.</p>
+        </div>
+
+        <div class="card">
+            <h3>Herbs & Spices</h3>
+            <p>Fresh herbs and natural spices for healthy living.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Fruit Supply</h3>
+            <p>Daily and weekly fruit deliveries.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wholesale Distribution</h3>
+            <p>Bulk fruit supply for businesses and institutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Corporate Deliveries</h3>
+            <p>Fruit packages for offices and events.</p>
+        </div>
+
+        <div class="card">
+            <h3>Organic Produce</h3>
+            <p>Healthy organic products for homes and businesses.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact-container">
+
+        <p><strong>EcoFresh Organics</strong></p>
+        <p>Kampala, Uganda</p>
+        <p>Phone: +256 756890987</p>
+        <p>Email: info@ecofreshorganics.com</p>
+
+        <br>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="tel" placeholder="Phone Number">
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 EcoFresh Organics. Elijah Ryan Givens.</p>
+</footer>
+
+</body>
+</html>
